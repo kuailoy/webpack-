@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/courses/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pages/home/home.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -121,59 +121,59 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
-/***/ "./src/pages/courses/drink.png":
-/*!*************************************!*\
-  !*** ./src/pages/courses/drink.png ***!
-  \*************************************/
+/***/ "./src/img/drink.png":
+/*!***************************!*\
+  !*** ./src/img/drink.png ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEpElEQVRYR62XXWyTVRjH/+e8X/1eO/phjSAFQxSymZkhwwTlQmUdF0bWmXihGI3hzhujXhkxJnKhNybGwLgzfiRaGFyQTdE5GZGEwYyMwLbQMufasXYr2+jK2q3vMeftuoytH6fGc/e+5/n4ned5zjnPIahhTIZa90vAy2BkLwAPCDyGOkMSQBKEXcoDXf5wT5+oWVJNMHnogF+n5Ahh5FUQ7KgmvwI0ygj7nurshOf0T5OVdCoCTIVaj1JC3mYMDws5XidECOI6Yyd94Z6j5fTLAiRCrRcAsu+/ON6ow/q94Z5nS9kqCTAVCiYJ4P5/nBesMGDaF+4u1MyasQEg0R68DYKtlZzb2n1IyzLu9k/BFV8W52QY857qDpQFSISCPwDoqGZxU5sH9CEVo+fjyF9LwmF1QFXVamrF+R+94e5Xih+rEeAFR0A+ErFS/5IXkl/DjTPjuD/4DyilsFvtqLPXiaiDgX1cLEwDgG81SPSKaLU7O3xQ/GZc+zaCpaHYqlNN1eCwOWA2mSuC8N2BvN7Mt6gBUMvquXw5gKJXm9UGp91pRKbcKEZhBSAYIcA2ofgBOE6tcLs17IpGYZ2fL6kmSzIcdgdsFlvJeQZEfeHu7WSyvbVNIuScqPNhScGvRIOvXoU/OY3NsYmKqjwdTocTiqxskMszdpBMhdqOE7AjIgARWcHZJcVwrimF8HpSKQTGx6vknBi1sb5IGcgJkmgPXgbBbhGA7xQr7uQYHvGaQNecII03b8KUzVY1oSqqEQ2TZirIMgxwgKoHT9HyScmKe8sMW3wrBlYmnrh1C/Z0uipAUYBvWVediwOMkUQoyDWtItrlAJ7z14ENR1dWxbA4VrkuuKAkSXA6XNmaABwdPvDMJ6VCQQ1cz8LzWAOe3PM4lLrC1ZEZiSDywTGR9QAgqCkFmz57ywAANQF/n8PZ3gUDYMeSDPPOwi5eyt0TBqCSlK+pCN2fvwmj9oj5AQB/1xA0l9MAsBx+WhhAlpUMSYRavwDIOyIxc3/1HogsA6lJIN63GgHv15dh2eIvALyxB5H3PxUxB5OmjpJCn0d+E9HgNaDxHPgKZz1PQTyRR6j5KWQv3Ya5aTvm4jdwt/cPEXOwWCwfGhFNtAdHRPq9cgAtKkPgUCsWJ2KIffmNkHNKaT7Dcq6aLqPrjfXI6QyLkA0nfPV88HMg8HwLps/8IuScC2mqdqWhb3B3TddxpYMo8EILprvEAAghzKyZ9+/sHbhQU0PSKVmQXkbJkzDw4l5Mnz4vFAGzydK/q3fAaFIf6AmrdcKd1IJ0vjTAtgPPIHnq56oAqqLONf7+Z2HPrgfgPyp1xH06MCKbsdVUyD0f7kf92Pf6wdXvzHAU48c6S4JIlOpNF4ektZMl2/JyF9RidhGJmUTVVZYSkCR5uan/rw1NQYWHycYOmTGG2FQMuq7XBKGppomGvqubSynV/DRLzaaQzohdvbzaTZr5YrHgagbgCsXHKUBe433jQmYBM7MzFSNACdEVRR2UqPQu32qVhKu+jtcq8/5xKZc7PDufasvrzKTreeNEopQuE0JzEqF3qCR13Z+b+aT5anROJE//AvmwsuceMJV4AAAAAElFTkSuQmCC\"\n\n//# sourceURL=webpack:///./src/pages/courses/drink.png?");
+eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEpElEQVRYR62XXWyTVRjH/+e8X/1eO/phjSAFQxSymZkhwwTlQmUdF0bWmXihGI3hzhujXhkxJnKhNybGwLgzfiRaGFyQTdE5GZGEwYyMwLbQMufasXYr2+jK2q3vMeftuoytH6fGc/e+5/n4ned5zjnPIahhTIZa90vAy2BkLwAPCDyGOkMSQBKEXcoDXf5wT5+oWVJNMHnogF+n5Ahh5FUQ7KgmvwI0ygj7nurshOf0T5OVdCoCTIVaj1JC3mYMDws5XidECOI6Yyd94Z6j5fTLAiRCrRcAsu+/ON6ow/q94Z5nS9kqCTAVCiYJ4P5/nBesMGDaF+4u1MyasQEg0R68DYKtlZzb2n1IyzLu9k/BFV8W52QY857qDpQFSISCPwDoqGZxU5sH9CEVo+fjyF9LwmF1QFXVamrF+R+94e5Xih+rEeAFR0A+ErFS/5IXkl/DjTPjuD/4DyilsFvtqLPXiaiDgX1cLEwDgG81SPSKaLU7O3xQ/GZc+zaCpaHYqlNN1eCwOWA2mSuC8N2BvN7Mt6gBUMvquXw5gKJXm9UGp91pRKbcKEZhBSAYIcA2ofgBOE6tcLs17IpGYZ2fL6kmSzIcdgdsFlvJeQZEfeHu7WSyvbVNIuScqPNhScGvRIOvXoU/OY3NsYmKqjwdTocTiqxskMszdpBMhdqOE7AjIgARWcHZJcVwrimF8HpSKQTGx6vknBi1sb5IGcgJkmgPXgbBbhGA7xQr7uQYHvGaQNecII03b8KUzVY1oSqqEQ2TZirIMgxwgKoHT9HyScmKe8sMW3wrBlYmnrh1C/Z0uipAUYBvWVediwOMkUQoyDWtItrlAJ7z14ENR1dWxbA4VrkuuKAkSXA6XNmaABwdPvDMJ6VCQQ1cz8LzWAOe3PM4lLrC1ZEZiSDywTGR9QAgqCkFmz57ywAANQF/n8PZ3gUDYMeSDPPOwi5eyt0TBqCSlK+pCN2fvwmj9oj5AQB/1xA0l9MAsBx+WhhAlpUMSYRavwDIOyIxc3/1HogsA6lJIN63GgHv15dh2eIvALyxB5H3PxUxB5OmjpJCn0d+E9HgNaDxHPgKZz1PQTyRR6j5KWQv3Ya5aTvm4jdwt/cPEXOwWCwfGhFNtAdHRPq9cgAtKkPgUCsWJ2KIffmNkHNKaT7Dcq6aLqPrjfXI6QyLkA0nfPV88HMg8HwLps/8IuScC2mqdqWhb3B3TddxpYMo8EILprvEAAghzKyZ9+/sHbhQU0PSKVmQXkbJkzDw4l5Mnz4vFAGzydK/q3fAaFIf6AmrdcKd1IJ0vjTAtgPPIHnq56oAqqLONf7+Z2HPrgfgPyp1xH06MCKbsdVUyD0f7kf92Pf6wdXvzHAU48c6S4JIlOpNF4ektZMl2/JyF9RidhGJmUTVVZYSkCR5uan/rw1NQYWHycYOmTGG2FQMuq7XBKGppomGvqubSynV/DRLzaaQzohdvbzaTZr5YrHgagbgCsXHKUBe433jQmYBM7MzFSNACdEVRR2UqPQu32qVhKu+jtcq8/5xKZc7PDufasvrzKTreeNEopQuE0JzEqF3qCR13Z+b+aT5anROJE//AvmwsuceMJV4AAAAAElFTkSuQmCC\"\n\n//# sourceURL=webpack:///./src/img/drink.png?");
 
 /***/ }),
 
-/***/ "./src/pages/courses/footer.art":
-/*!**************************************!*\
-  !*** ./src/pages/courses/footer.art ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<footer></footer>\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/pages/courses/footer.art?");
-
-/***/ }),
-
-/***/ "./src/pages/courses/header.art":
-/*!**************************************!*\
-  !*** ./src/pages/courses/header.art ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '', $escape = $imports.$escape, title = $data.title;\n    $$out += '<header>\\r\\n  <h1>';\n    $$out += $escape(title);\n    $$out += '</h1>\\r\\n</header>\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/pages/courses/header.art?");
-
-/***/ }),
-
-/***/ "./src/pages/courses/index.art":
-/*!*************************************!*\
-  !*** ./src/pages/courses/index.art ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '', $$blocks = arguments[1] || {}, include = function (content) {\n            $$out += content;\n            return $$out;\n        }, title = $data.title;\n    include(__webpack_require__(/*! ./header.art */ \"./src/pages/courses/header.art\")({ title: title }));\n    $$out += '\\r\\n\\r\\n<p><img ';\n    $$out += 'src=\"' + __webpack_require__(/*! ./drink.png */ \"./src/pages/courses/drink.png\") + '\"';\n    $$out += ' alt=\"timg\" /></p>\\r\\n<p>This is just an awesome page.</p>\\r\\n';\n    include(__webpack_require__(/*! ./footer.art */ \"./src/pages/courses/footer.art\")($data));\n    $$out += '\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/pages/courses/index.art?");
-
-/***/ }),
-
-/***/ "./src/pages/courses/index.js":
-/*!************************************!*\
-  !*** ./src/pages/courses/index.js ***!
-  \************************************/
+/***/ "./src/pages/home/home.js":
+/*!********************************!*\
+  !*** ./src/pages/home/home.js ***!
+  \********************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_art__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.art */ \"./src/pages/courses/index.art\");\n/* harmony import */ var _index_art__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_art__WEBPACK_IMPORTED_MODULE_0__);\n// const render = require('./index.art');\r\n\r\n\r\nconst data = {\r\n  title: 'Courses Page',\r\n};\r\nconst html = _index_art__WEBPACK_IMPORTED_MODULE_0___default()(data);\r\nconsole.log(html);\r\n\r\nif (typeof document === 'object') {\r\n  document.body.innerHTML = html;\r\n}\r\n\n\n//# sourceURL=webpack:///./src/pages/courses/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_art__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.art */ \"./src/pages/home/index.art\");\n/* harmony import */ var _index_art__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_art__WEBPACK_IMPORTED_MODULE_0__);\n// const render = require('./index.art');\r\n\r\n\r\nconst data = {\r\n  title: 'Home Page',\r\n};\r\nconst html = _index_art__WEBPACK_IMPORTED_MODULE_0___default()(data);\r\nconsole.log(html);\r\n\r\nif (typeof document === 'object') {\r\n  document.body.innerHTML = html;\r\n}\r\n\n\n//# sourceURL=webpack:///./src/pages/home/home.js?");
+
+/***/ }),
+
+/***/ "./src/pages/home/index.art":
+/*!**********************************!*\
+  !*** ./src/pages/home/index.art ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $imports = __webpack_require__(/*! ../../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '', $$blocks = arguments[1] || {}, include = function (content) {\n            $$out += content;\n            return $$out;\n        }, title = $data.title;\n    include(__webpack_require__(/*! ./../../template/header.art */ \"./src/template/header.art\")({ title: title }));\n    $$out += '\\r\\n\\r\\n<p><img ';\n    $$out += 'src=\"' + __webpack_require__(/*! ../../img/drink.png */ \"./src/img/drink.png\") + '\"';\n    $$out += ' alt=\"timg\" /></p>\\r\\n<p>This is just an awesome page.</p>\\r\\n';\n    include(__webpack_require__(/*! ./../../template/footer.art */ \"./src/template/footer.art\")($data));\n    $$out += '\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/pages/home/index.art?");
+
+/***/ }),
+
+/***/ "./src/template/footer.art":
+/*!*********************************!*\
+  !*** ./src/template/footer.art ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $imports = __webpack_require__(/*! ../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '';\n    $$out += '<footer></footer>\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/template/footer.art?");
+
+/***/ }),
+
+/***/ "./src/template/header.art":
+/*!*********************************!*\
+  !*** ./src/template/header.art ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var $imports = __webpack_require__(/*! ../../node_modules/art-template/lib/runtime.js */ \"./node_modules/art-template/lib/runtime.js\");\nmodule.exports = function ($data) {\n    'use strict';\n    $data = $data || {};\n    var $$out = '', $escape = $imports.$escape, title = $data.title;\n    $$out += '<header>\\r\\n  <h1>';\n    $$out += $escape(title);\n    $$out += '</h1>\\r\\n</header>\\r\\n';\n    return $$out;\n};\n\n//# sourceURL=webpack:///./src/template/header.art?");
 
 /***/ })
 

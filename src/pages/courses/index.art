@@ -1,5 +1,5 @@
-<% include('./header.art', { title: title }) %>
+<% include('../../template/header.art', { title: title }) %>
 
-<p><img src="./drink.png" alt="timg" /></p>
-<p>This is just an awesome page.</p>
-{{include './footer.art'}}
+<p><img src="../../img/drink.png" alt="timg" /></p>
+<p>course center</p>
+{{include '../../template/footer.art'}}

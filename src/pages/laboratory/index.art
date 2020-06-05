@@ -1,5 +1,0 @@
-<% include('./header.art', { title: title }) %>
-
-<p><img src="./drink.png" alt="timg" /></p>
-<p>This is just an awesome page.</p>
-{{include './footer.art'}}
