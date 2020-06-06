@@ -1,5 +1,5 @@
-// const render = require('./index.art');
 import render from './index.art';
+import './home.less';
 
 const data = {
   title: 'Home Page',

@@ -1,4 +1,3 @@
-// const render = require('./index.art');
 import render from './index.art';
 
 const data = {

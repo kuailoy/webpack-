@@ -5,7 +5,7 @@ const config = require('./config'); // 获取配置
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // 用于生成html
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // 清空dist
 
-const { PROJECT_PATH, PAGE_PATH } = config;
+const { PROJECT_PATH, PAGE_PATH, SRC_PATH, VENDORS_PATH, NODE_MODULES_PATH } = config;
 
 // 动态生成入口
 const getEntry = () => {
@@ -45,25 +45,35 @@ const entryMap = getEntry();
 const htmlArray = getHtmlArray(entryMap);
 
 module.exports = {
-  mode: 'development',
   entry: entryMap,
   output: {
-    filename: '[name].[chunkhash:5].js',
     path: path.join(PROJECT_PATH, './dist'),
   },
   module: {
     rules: [
       {
-        test: /\.jpg$/,
-        loader: 'file-loader',
-      },
-      {
-        test: /\.jpg|png$/,
+        test: /\.(jpg|png|gif|svg)$/,
         use: [
           {
-            loader: 'url-loader?mimetype=image/png',
+            loader: 'url-loader',
             options: {
               esModule: false,
+              limit: 8192,
+              name: 'img/[name].[[ext]', // 回退使用 file-loader时的name
+              fallback: 'file-loader', // 超过 8192 bytes 时回退使用file-loader
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        include: [SRC_PATH],
+        exclude: [VENDORS_PATH],
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'fonts/[name].[ext]',
             },
           },
         ],
@@ -76,9 +86,16 @@ module.exports = {
           // @see https://github.com/aui/art-template
         },
       },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [SRC_PATH],
+        exclude: [VENDORS_PATH, NODE_MODULES_PATH],
+      },
     ],
   },
-  plugins: [new CleanWebpackPlugin()].concat(htmlArray),
+  // plugins: [new CleanWebpackPlugin()].concat(htmlArray),
+  plugins: [...htmlArray],
   resolve: {
     extensions: ['.js'],
   },
