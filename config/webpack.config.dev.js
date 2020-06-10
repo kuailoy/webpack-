@@ -1,8 +1,7 @@
-const config = require('./config');
-const webpackBase = require('./webpack.config.base');
-
 const webpack = require('webpack');
 const webpackMerge = require('webpack-merge');
+const config = require('./config');
+const webpackBase = require('./webpack.config.base');
 
 const { SRC_PATH, VENDORS_PATH } = config;
 
@@ -20,7 +19,7 @@ const webpackDev = {
     host: '0.0.0.0', // 设置为0.0.0.0并配合useLocalIp可以局域网访问
     useLocalIp: true, // 使用本机IP打开devServer，而不是localhost
     proxy: {
-      //可以通过proxy代理其他服务器的api
+      // 可以通过proxy代理其他服务器的api
       '/api': {
         target: 'https://v1.alapi.cn',
         pathRewrite: { '^/api': '' },
