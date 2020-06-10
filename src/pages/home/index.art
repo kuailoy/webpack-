@@ -1,5 +1,16 @@
-<% include('../../template/header.art', { title: title }) %>
+<% include('../../template/header.art', { title: data.title }) %>
 
 <p><img src="../../img/drink.png" alt="timg" /></p>
 <p class="text">This is just an awesome page.</p>
+
+<div class="banner"></div>
+<p>data示例</p>
+<ul>
+  {{each data.list}}
+  <li>
+    {{ $value.hot_word }}
+  </li>
+  {{/each}}
+</ul>
+
 {{include '../../template/footer.art'}}

@@ -59,7 +59,7 @@ module.exports = {
             options: {
               esModule: false,
               limit: 8192,
-              name: 'img/[name].[[ext]', // 回退使用 file-loader时的name
+              name: 'img/[name].[hash].[ext]', // 回退使用 file-loader时的name
               fallback: 'file-loader', // 超过 8192 bytes 时回退使用file-loader
             },
           },
@@ -87,6 +87,13 @@ module.exports = {
         },
       },
       {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'eslint-loader',
+        include: [SRC_PATH],
+        exclude: [VENDORS_PATH, NODE_MODULES_PATH],
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [SRC_PATH],
@@ -94,9 +101,11 @@ module.exports = {
       },
     ],
   },
-  // plugins: [new CleanWebpackPlugin()].concat(htmlArray),
   plugins: [...htmlArray],
   resolve: {
+    alias: {
+      '@': SRC_PATH,
+    },
     extensions: ['.js'],
   },
 };

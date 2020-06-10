@@ -9,7 +9,7 @@ const { SRC_PATH, VENDORS_PATH } = config;
 const webpackDev = {
   mode: 'development',
   output: {
-    filename: '[name].[hash:8].bundle.js',
+    filename: '[name].[hash:8].js',
   },
   devtool: 'eval-cheap-module-source-map', // 开发环境设置sourceMap，生产环境不使用
   devServer: {
@@ -21,7 +21,12 @@ const webpackDev = {
     useLocalIp: true, // 使用本机IP打开devServer，而不是localhost
     proxy: {
       //可以通过proxy代理其他服务器的api
-      '/api': 'http://localhost:3000',
+      '/api': {
+        target: 'https://v1.alapi.cn',
+        pathRewrite: { '^/api': '' },
+        secure: false,
+        changeOrigin: true,
+      },
     },
   },
   module: {
@@ -34,7 +39,7 @@ const webpackDev = {
       },
       {
         test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader'],
         include: [SRC_PATH],
         exclude: [VENDORS_PATH],
       },
